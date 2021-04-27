@@ -311,7 +311,7 @@ const printAllPairs = (n) => {
             console.log(i, j);
         }
     }
-}
+} 
 
 printAllPairs(5);
 
