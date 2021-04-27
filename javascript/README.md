@@ -1,4 +1,4 @@
-# Daily Codewars Challenge 
+# Daily Challenges
 
 Practing algorithms in JavaScript and Ruby with practing Test Driven Development  
 
