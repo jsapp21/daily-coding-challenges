@@ -1,10 +1,11 @@
-//
+// given two positive integers, find out if the two numbers have the same number of digits
+// return true or false 
 
 
 
 const sameFrequency = (num1, num2) => {
     if (num1 === num2) return true
-    // split into arr loop through to parseInt
+
     let arr1 = ("" + num1).split("").map(n => parseInt(n))
     let arr2 = ("" + num2).split("").map(n => parseInt(n))
 
@@ -32,5 +33,14 @@ const sameFrequency = (num1, num2) => {
 
 }
 
-console.log(sameFrequency(182, 281))
-console.log(sameFrequency(182, 381))
+describe('same frequency', () => {
+    test('one', () => {
+      (sameFrequency(182, 281), true);
+    });
+    test('two', () => {
+        (sameFrequency(34, 14), true);
+    });
+    test('three', () => {
+        (sameFrequency(22, 222), true);
+    });
+});
