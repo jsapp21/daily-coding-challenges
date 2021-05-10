@@ -1,6 +1,8 @@
 // create a function that accpets a sorted array and counts the unique values, return that number
 // O(n) b/c it only loops once 
 
+// if not sorted, sort first
+
 const arr = [1, 2, 3, 4, 7, 7, 12, 12, 12, 13]
 
 const countUniqueValues = (arr) => {

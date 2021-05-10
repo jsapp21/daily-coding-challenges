@@ -20,13 +20,18 @@ const maxSubArrSum = (arr, num) => {
     tempSum = maxSum;
 
     for (let i=num; i < arr.length; i++){
+        // takes num amount of times - arr[0] + arr[3]
         tempSum = tempSum - arr[i - num] + arr[i];
         maxSum = Math.max(maxSum, tempSum);
-        console.log(maxSum, 'max')
-        console.log(tempSum, 'temp')
     }
 
     return maxSum;
 }
 
 console.log(maxSubArrSum([2, 6, 9, 2, 1, 8, 5, 6, 3], 3))
+
+describe('max Sum', () => {
+    test('one', () => {
+      (maxSubArrSum([2, 6, 9, 2, 1, 8, 5, 6, 3], 3), 19);
+    });
+});
