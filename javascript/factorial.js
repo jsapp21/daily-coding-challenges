@@ -9,3 +9,24 @@ const factorial = (n) => {
 }
 
 console.log(factorial(4));
+
+
+
+function getSecondLargest(nums) {
+
+    let sortArr = nums.sort(function(a, b) {
+        return a -b;
+    })
+    
+    let largetst = sortArr[sortArr.length - 1];
+    
+    for (let i=0; i < sortArr.length; i++){
+        if (sortArr[i] >= largetst){
+            return sortArr[i - 1]
+        }
+    }
+    
+}
+
+console.log(getSecondLargest([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]))
+console.log(getSecondLargest([2, 3, 6, 6, 5]))
