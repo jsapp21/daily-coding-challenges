@@ -31,13 +31,9 @@ const anagram = (str1, str2) => {
         } else {
             obj[key] -= 1;
         }  
-
     }
 
     return true
-
-
-    
 }
 
 describe('anagram', () => {
