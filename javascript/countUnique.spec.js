@@ -17,7 +17,6 @@ const countUniqueValues = (arr) => {
 
     return i + 1;
 
-
 }
 
 console.log(countUniqueValues(arr))
