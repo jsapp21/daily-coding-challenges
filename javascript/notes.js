@@ -153,6 +153,7 @@ componentWillUnmount() – Called after the component is unmounted from the DOM.
 
 
 Higher Order Components(HOC)
+- a higher-order component is a function that takes a component and returns a new component.
 Higher Order Component is an advanced way of reusing the component logic. 
 Basically, it’s a pattern that is derived from React’s compositional nature. HOC are custom components which wrap another component within it. 
 They can accept any dynamically provided child component but they won’t modify or copy any behavior from their input components. 
@@ -165,6 +166,7 @@ State abstraction and manipulation
 Props manipulation
 
 What are Pure Components
+- only difference in a React.Component vs. React.PureComponent is it does not allow shouldComponetUpdate()
 Pure components are the simplest and fastest components which can be written. 
 They can replace any component which only has a render(). 
 These components enhance the simplicity of the code and performance of the application.
@@ -176,17 +178,18 @@ It is a predictable state container for JavaScript applications and is used for 
 Applications developed with Redux are easy to test and can run in different environments showing consistent behavior.
 
 Three principles that Redux follows
-Single source of truth: 
+1) Single source of truth: 
 The state of the entire application is stored in an object/ state tree within a single store. 
 The single state tree makes it easier to keep track of changes over time and debug or inspect the application.
-State is read-only: 
+
+2) State is read-only: 
 The only way to change the state is to trigger an action. 
 An action is a plain JS object describing the change. 
 Just like state is the minimal representation of data, the action is the minimal representation of the change to that data. 
-Changes are made with pure functions: 
+
+3) Changes are made with pure functions: 
 In order to specify how the state tree is transformed by actions, you need pure functions. 
 Pure functions are those whose return value depends solely on the values of their arguments.
-
 
 
 */
